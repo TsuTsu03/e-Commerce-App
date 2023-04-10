@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tindahan</title>
+    <link rel="stylesheet" href="AgapeBoutique.css">
+    <link rel="icon" type="imge/x-icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+</head>
+<body>
+    <div class="title">
+        <h1>
+          AGAPE BOUTIQUE
+        </h1>
+        <div class="title-icon">
+          <img src="./Images/shop.png" alt="Shop now">
+        </div>
+      </div>
+      <nav>
+        <div class="navbar-logo">
+          <a href="AgapeBoutique.html#Home" class="logo" onclick="scrollToHome()"><img src="./Images/logo.png" alt="Avatar"></a>
+        </div>
+          <div class="navbar-buttons">
+              <a href="AgapeBoutique.html#AboutUs" onclick="setActiveLink(this)">About Us</a>
+              <a href="AgapeBoutique_ShoppingSection.html#ShopNow" id="ShopNow" onclick="setActiveLink(this)">Shop now</a>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="setActiveLink(this)">Brands</button>
+                  <div class="dropdown-content">
+                    <a href="#">Gucci</a>
+                    <a href="#">Dior</a>
+                    <a href="#">Chanel</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+              <button class="dropbtn" onclick="setActiveLink(this)">Types</button>
+              <div class="dropdown-content">
+                <a href="#">Clothes</a>
+                <a href="#">Bags</a>
+                <a href="#">Shoes</a>
+              </div>
+              </div>
+              <a href="#" onclick="setActiveLink(this)">Contact Us</a>
+            </div>
+            <div class="navbar-avatar">
+              <img src="./Images/avatar.png" alt="Avatar">
+              <img src="./Images/shop.png" alt="Shop now">
+              <span class="cart-count">0</span>
+            </div>
+      </nav>
+        <section id="ShopNow">
+        <main id="product-list">
+            <div id="top">
+                <h1>
+                  Shop Now!
+                </h1>
+            </div>
+            
+        </main>
+        </section>
+        
+        <!-- Product Template -->
+        <template id="product-template">
+            <div class="product">
+                <div class="product-image">
+                    <img src="" alt="">
+                </div>
+                <div class="product-details">
+                    <h1></h1>
+                    <div class="product-price">
+                    <h2></h2>
+                    <h2>PHP</h2>
+                    </div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h2>Confirm Purchase</h2>
+                              <p>You are about to purchase:</p>
+                              <div class="product-preview">
+                                <h3 class="product-name">Product Name</h3>
+                                <img class="product-image" src="" alt="Product Image">
+                                <p class="product-price">Price: $10</p>
+                              </div>
+                              <button class="confirm-purchase">Confirm Purchase</button>
+                              <button class="cancel-purchase">Cancel</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <script src="AgapeBoutique.js"></script>
+    
+</body>
+</html>

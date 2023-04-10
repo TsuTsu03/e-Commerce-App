@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tindahan</title>
+    <link rel="stylesheet" href="AgapeBoutique.css">
+    <link rel="icon" type="imge/x-icon" href="./Images/logo.png"
+</head>
+<body>
+  <div class="title">
+    <h1>
+      AGAPE BOUTIQUE
+    </h1>
+    <div class="title-icon">
+      <img src="./Images/shop.png" alt="Shop now">
+    </div>
+  </div>
+    <nav>
+      <div class="navbar-logo">
+        <a href="#Home" class="logo" onclick="scrollToHome()"><img src="./Images/logo.png" alt="Avatar"></a>
+      </div>
+        <div class="navbar-buttons">
+            <a href="#AboutUs" onclick="setActiveLink(this)">About Us</a>
+            <a href="AgapeBoutique_ShoppingSection.html#ShopNow" id="ShopNow" onclick="setActiveLink(this)">Shop now</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="setActiveLink(this)">Brands</button>
+                <div class="dropdown-content">
+                  <a href="#">Gucci</a>
+                  <a href="#">Dior</a>
+                  <a href="#">Chanel</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="setActiveLink(this)">Types</button>
+            <div class="dropdown-content">
+              <a href="#">Clothes</a>
+              <a href="#">Bags</a>
+              <a href="#">Shoes</a>
+            </div>
+            </div>
+            <a href="#" onclick="setActiveLink(this)">Contact Us</a>
+          </div>
+          <div class="navbar-avatar">
+            <img src="./Images/avatar.png" alt="Avatar">
+            <img src="./Images/shop.png" alt="Shop now">
+            <span class="cart-count">0</span>
+          </div>
+    </nav>
+    <section id="Home" class="container">
+      <section>
+        <div id="top">
+        <h1>
+          AGAPE BOUTIQUE
+        </h1>
+        </div>
+        <div id="boutique">
+        </div>
+        <div id="bottom">
+        <p>
+          “ FASHION YOU CAN BUY, BUT STYLE YOU POSSESS. THE KEY TO STYLE IS LEARNING WHO YOU ARE, WHICH TAKES YEARS. THERE’S NO HOW-TO-ROAD MAP STYLE. IT’S ABOUT SELF EXPRESSION AND, ABOVE ALL ATTITUDE.”
+          <br>
+          <br>
+          <br>
+          -Iris Apfel
+        </p>
+        </div>
+      </section>
+      <section class="image-grid">
+        <div class="row">
+          <div class="col">
+            <img src="./Images/beautiful-girl.jpg" alt="Image 1">
+            <div class="overlay">
+              <button class="button" id="Shop"  onclick="redirectToPage()">Button 1</button>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./Images/shoes.jpg" alt="Image 2">
+            <div class="overlay">
+              <button class="button" id="Shop"  onclick="redirectToPage()">Button 2</button>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./Images/blue-gown.jpg" alt="Image 3">
+            <div class="overlay">
+              <button class="button" id="Shop" onclick="redirectToPage()">Button 3</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="./Images/shade-girl.png" alt="Image 4">
+            <div class="overlay">
+              <button class="button" id="Shop" onclick="redirectToPage()">Button 4</button>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./Images/bridesmaids.jpg" alt="Image 5">
+            <div class="overlay">
+              <button class="button" id="Shop" onclick="redirectToPage()">Button 5</button>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./Images/white-girl.jpg" alt="Image 6">
+            <div class="overlay">
+              <button class="button" id="Shop" onclick="redirectToPage()">Button 6</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="discount">
+        <div >
+          <p>
+            -Final Sale-
+          </p>
+        </div>
+        <div>
+          <h1>
+            Get 30% OFF
+          </h1>
+        </div>
+        <div>
+          <button id="Shop"  onclick="redirectToPage()">
+            Shop Now!
+          </button>
+        </div>
+      </section>
+      <footer>
+      </footer>
+    </section>
+    <section id="AboutUs" class="container">
+      <div id="top">
+        <h3>
+          ABOUT US
+        </h3>
+      </div>
+      <div id="aboutus-main">
+        <div id="welcome">
+          <div id="welcome-img">
+            <img src="./Images/logo2.png" alt="Logo 2" />
+          </div>
+          <div id="welcome-text">
+            <p> Welcome to AGAPE BOUTIQUE!
+              <br>
+              <br>
+              At our core, we are a team of passionate individuals who are dedicated to providing our customers with the best possible online shopping experience. Our mission is to bring convenience and affordability to your doorstep, so that you can shop for the things you need without ever leaving your home. 
+            </p>
+          </div>
+        </div>
+        <div id="online">
+          <div id="online-text">
+            <p> Welcome to our online boutique store!
+              <br>
+              <br>
+              We are a team of passionate fashion enthusiasts who believe that everyone deserves to look and feel their best. Our carefully curated collection of clothing and accessories reflects our commitment to quality, style, and affordability. Whether you're looking for the perfect outfit for a special occasion or just want to update your wardrobe, we've got you covered. Thank you for choosing us as your fashion destination. 
+            </p>
+          </div>
+          <div id="online-img">
+            <img src="./Images/LJ.jpg" alt="Logo 2" />
+          </div>
+        </div>
+        <div id="team">
+          <div id="team-header">
+            <h1>
+              MEET THE TEAM
+            </h1>
+          </div>
+          <div id="team-images">
+            <div id="nikki">
+              <img src="./Images/nikki.jpg" alt="Executive Assistant" />
+              <h3>
+                Nikki Itable
+              </h3>
+              <p>
+                Executive Assistant
+              </p>
+            </div>
+            <div id="LJ">
+              <img src="./Images/LJ.jpg" alt="CEO" />
+              <h3>
+                Love Joy Itable
+              </h3>
+              <p>
+                CEO / Main Designer
+              </p>
+            </div>
+            <div id="jansen">
+              <img src="./Images/jansen.jpg" alt="Web Developer" />
+              <h3>
+                Jansen Flores
+              </h3>
+              <p>
+                Web Developer
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    
+    <script src="AgapeBoutique.js"></script>
+</body>
+</html>

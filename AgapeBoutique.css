@@ -1,0 +1,499 @@
+html{
+    scroll-behavior: smooth;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding: 0 20px;
+    border-color: black;
+    border-bottom: 2px solid black;
+    color: #C56CBC;
+    font-size: 30px;
+}
+.title-icon img {
+    width: 40px;
+    height: 40px;
+  }
+nav {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    position: sticky;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffef7;
+    height: 60px;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-top: 1px;
+  }
+  
+  .navbar-buttons a {
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid black; /* add border */
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+  
+  .navbar-buttons button {
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid black; /* add border */
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+  
+  .navbar-buttons a:hover {
+    background-color: #DEDEDE;
+  }
+  
+  .navbar-buttons a.active {
+    background-color: #C56CBC;
+  }
+  
+  .navbar-avatar img {
+    position: relative;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  .cart-count {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .navbar-logo img {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+  }
+
+  #Home{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  section #top{
+    margin-top: 20px;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    text-align: center;
+    width: 100%;
+    height: 286px;
+    top: 275px;
+    color:#C56CBC;
+    font-size: 40px;
+  }
+  section #boutique{
+    display: flex;
+    width: 100%;
+    height: 580px;
+    justify-content: center;
+    background-image: url("./Images/boutique.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+  section #boutique img{
+    position: absolute;
+    width: 99%;
+    height: 84%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+  }
+  section #bottom{
+    margin-top: 0;
+    background: #634C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 369px;
+    top: 275px;
+    color:white;
+    font-size: 20px;
+  }
+
+  section #bottom p{
+    width: 60%;
+  }
+
+  .image-grid {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-basis: 100%;
+    height: 333px;
+  }
+  
+  .col {
+    position: relative;
+    width: calc(33.33%) ;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .col:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #discount{
+    display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between; 
+  height: 248px; 
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    padding-bottom: 10px;
+  }
+
+  #discount button{
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20%;
+    font-weight: bolder;
+  }
+
+  #AboutUs{
+    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  #aboutus-main{
+    width: 100%;
+    height: 1700px;
+    background-color: #634C5B;
+  }
+
+  #welcome{
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-around;
+  }
+
+  #welcome-img img{
+    margin-top: 60px;
+    width: 253px;
+    height: 230px;
+    border-radius: 40%;
+  }
+
+  #welcome-text{
+    display: flex;
+    border-radius: 10%;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: #D9D9D9;
+    width: 800px;
+    height: 400px;
+    margin-right: 30px;
+  }
+
+  #online{
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-around;
+  }
+
+  #online-img img{
+    margin-right: 60px;
+    margin-top: 100px;
+    width: 300px;
+    height: 270px;
+    border-radius: 50%;
+  }
+
+  #online-text{
+    display: flex;
+    border-radius: 10%;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: #D9D9D9;
+    width: 850px;
+    height: 450px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  #team{
+    margin-top: 100px;
+  }
+
+  #team-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #C56CBC;
+    font-size: 40px;
+  }
+
+  #team-images{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+
+  #team-images img{
+    height: 152px;
+    width: 185px;
+    border-radius: 50%;
+  }
+
+  #team-images h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 0;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+
+  }
+
+  #team-images p{
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: self-start;
+    top: 0;
+    color: white;
+    text-align: center;
+    font-size: larger;
+  }
+
+  #nikki, #jansen{
+    align-self: self-end;
+    bottom: 0; 
+    padding: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 45%;
+  }
+  
+  .product-image {
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+  
+  .product-image img {
+    display: block;
+    width: 100%;
+  }
+  
+  .product-details {
+    flex-basis: 70%;
+  }
+  
+  .product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .product input {
+    padding: 5px;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .product-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product button {
+    padding: 10px 20px;
+    border: none;
+    color: #0f0f0f;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    background-color: #E9D8D8;
+  }
+  
+  .buy-now {
+    background-color: #C56CBC;
+  }
+
+  .product {
+    background-color: #fff;
+    border: 1px solid #634C5B;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(120, 2, 87, 0.7);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Clearfix to prevent floating elements from overlapping */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 90px;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price{
+  top: 0;
+  display: flex;
+  gap: 0;
+  align-self: self-start;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-preview img {
+  max-width: 100%;
+  height: auto;
+}
